@@ -5,10 +5,10 @@ public class Latihan1 {
 
 	public static void main(String[]args){
 
-		String rd = "AGUNG SYAIFULLAH PUTRA";
-		System.out.println("Hasil Plaintext adalah	:"+rd);
+		String xtr = "AGUNG SYAIFULLAH PUTRA";
+		System.out.println("Hasil Plaintext adalah	:"+xtr);
 		
-		String id = encript(rd);
+		String id = encript(xtr);
 		System.out.println("Hasil Enkripsi adalah	:"+id);
 		
 		String rd1 = decript(id);
@@ -16,7 +16,7 @@ public class Latihan1 {
 		
 		
 	}
-	public static final String[] rd = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"," "};
+	public static final String[] xtr = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"," "};
 	public static final String[] id = {"D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","A","B","C"," "};
 	
 	
@@ -26,8 +26,8 @@ public class Latihan1 {
 			String s0 = plaintext.substring(i, i+1);
 			String s1 = " ";							
 			//
-			for(int j=0; j<rd.length; j++){				
-				if(s0.equals(rd[j])){					
+			for(int j=0; j<xtr.length; j++){				
+				if(s0.equals(xtr[j])){					
 					s1 = id[j];
 					break;
 				}
@@ -45,7 +45,7 @@ public class Latihan1 {
 					//
 					for(int j=0; j<id.length; j++){				
 						if(s0.equals(id[j])){					
-							s1 = rd[j];
+							s1 = xtr[j];
 							break;
 						}
 					}
